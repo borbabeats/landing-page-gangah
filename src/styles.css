@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+header {
+  height: 10vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background: #f5fffa;
+  border-bottom: 3px solid #b8d5cd;
+}
+
+.logo-gangah img {
+  width: 56px;
+}
+
+.nav-menu {
+  display: flex;
+  gap: 0.5em;
+}
+
+.nav-menu img {
+  width: 2em;
+  padding: 0 0.5em;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 3em;
+  background: radial-gradient(closest-side at 50% 50%, #acdf87, #98bf64);
+  max-height: 70vh;
+}
+
+.main-content {
+  height: 80vh;
+  max-width: 45vw;
+}
+
+.main-content h2 {
+  margin-bottom: 1em;
+}
+
+.main-content button {
+  padding: 0.2em;
+  border: 2px solid black;
+  border-radius: 8px;
+  margin-top: 2em;
+  cursor: pointer;
+  width: 10em;
+}
+
+.main-content button:hover {
+  background-color: #ffa159;
+}
+
+.formulario {
+  height: 50vh;
+  width: 35vw;
+  position: absolute;
+  left: 60%;
+  bottom: 60%;
+  transform: translateY(50%);
+}
+
+fieldset {
+  max-width: 20em;
+  height: 20em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px) saturate(110%);
+  border: none;
+  border-radius: 8px;
+  padding: 1em;
+  box-shadow: 0 0 1em 0 rgba(0, 0, 0, 0.2);
+}
+
+fieldset legend {
+  margin-left: 1em;
+}
+
+.input-field {
+  display: flex;
+  flex-direction: column;
+  margin: 1em;
+  position: relative;
+  width: 100%;
+}
+
+.input-field label {
+  margin-bottom: 0.5em;
+}
+
+.input-field input {
+  outline: none;
+  padding: 0 0.2em;
+  font-size: 0.85em;
+  border: none;
+
+  height: 2em;
+}
+
+.input-field .underline::before {
+  content: "";
+  position: absolute;
+  height: 1px;
+  width: 100%;
+  bottom: -1px;
+  left: 0;
+  background: rgb(0, 0, 0, 0.2);
+}
+
+.input-field .underline::after {
+  content: "";
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  bottom: -1px;
+  left: 0;
+  background: linear-gradient(to left, #299617, #7cfc00);
+  transform: scaleX(0);
+  transition: all 0.2s ease-in-out;
+  transform-origin: left;
+}
+
+.input-field input:focus ~ .underline::after {
+  transform: scaleX(1);
+}
+
+fieldset button {
+  width: 100%;
+  height: 2em;
+  border: none;
+  border-radius: 15px;
+  background: #299617;
+  color: #fff;
+  transition: all 0.3s ease-in;
+}
+
+fieldset button:hover {
+  color: #000;
+  background: #7cfc00;
+}
+
+form p {
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: 500;
+  padding: 0.5em;
+}
+
+.rodape {
+  min-height: 20vh;
+  position: relative;
+  border-top: 3px solid #b8d5cd;
+  background: #f5fffa;
+}
